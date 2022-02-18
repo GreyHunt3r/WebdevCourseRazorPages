@@ -7,14 +7,14 @@
 
 <div>
     <p>
-        <span id="scoreHome">###</span> - <span id="scoreAway">###</span>
+        <span id="scoreHome">@Model.Home</span> - <span id="scoreAway">@Model.Away</span>
     </p>
     <div>
-        <a id="incrementHome" href="###">Home ++</a>
-        <a id="decrementHome" href="###">Home --</a>
+        <a id="incrementHome" href="?home=@(Model.Home+1)&away=@Model.Away">Home ++</a>
+        <a id="decrementHome" href="?home=@(Model.Home+1)&away=@Model.Away">Home --</a>
 
-        <a id="incrementAway" href="###">Away ++</a>
-        <a id="decrementAway" href="###">Away --</a>
+        <a id="incrementAway" href="?home=@(Model.Home)&away=@(Model.Away+1)">Away ++</a>
+        <a id="decrementAway" href="?home=@(Model.Home)&away=@(Model.Away-1)">Away --</a>
     </div>
     <div>
         <a id="reset" href="###">Reset</a>

@@ -11,13 +11,13 @@
     </p>
     <div>
         <a id="incrementHome" href="?home=@(Model.Home+1)&away=@Model.Away">Home ++</a>
-        <a id="decrementHome" href="?home=@(Model.Home+1)&away=@Model.Away">Home --</a>
+        <a id="decrementHome" href="?home=@(Model.Home-1)&away=@Model.Away">Home --</a>
 
         <a id="incrementAway" href="?home=@(Model.Home)&away=@(Model.Away+1)">Away ++</a>
         <a id="decrementAway" href="?home=@(Model.Home)&away=@(Model.Away-1)">Away --</a>
     </div>
     <div>
-        <a id="reset" href="###">Reset</a>
+        <a id="reset" href="?home=0&away=0">Reset</a>
     </div>
 </div>
 

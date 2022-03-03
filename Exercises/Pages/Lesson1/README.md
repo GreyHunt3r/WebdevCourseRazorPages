@@ -102,7 +102,7 @@ We willen een pagina kunnen aanroepen met de volgende url structuur: `/category/
 Category & subcategory zijn strings, en productId moet een getal zijn groter dan 0.    
 - [Route Data](https://www.learnrazorpages.com/razor-pages/routing#route-data)
 
-Maak een *Custom route constraints* die controleert of category en subcategory de volgende structuur hebben "cat{number}" of "sub{nunber}".
+Maak een *Custom route constraints* die controleert of category en subcategory de volgende structuur hebben "cat{number}" of "sub{number}".
 B.v. cat23, subcat100.
 Zie voor een voorbeeld van Custom Route Constrain:  
 - [Custom route constraints](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/routing?view=aspnetcore-5.0#route-template-reference) (even naar beneden scrollen).

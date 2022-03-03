@@ -6,16 +6,32 @@
 }
 <h1>Test</h1>
 <div>
-    <p id="result">###</p>
+    <p id="result">@Model.Result</p>
 </div>
 
 <form method="post" id="calculatorForm">
-    <input type="hidden" ###>
+    <input type="hidden" name="result" value="@Model.Result">
     <input type="number" id="input" name="input">
-    <button name="addBtn" id="addBtn" type="submit" asp-page-handler="Add">+</button>
-    <button name="subBtn" id="subBtn" type="submit" ###>-</button>
-    <button name="mulBtn" id="mulBtn" type="submit" ###>*</button>
-    <button name="divBtn" id="divBtn" type="submit" ###>/</button>
+    <button name="addBtn" 
+            id="addBtn" 
+            type="submit" 
+            asp-page-handler="Add" 
+            method="POST">+</button>
+    <button name="subBtn" 
+            id="subBtn" 
+            type="submit" 
+            asp-page-handler="Sub"
+            method="POST">-</button>
+    <button name="mulBtn" 
+            id="mulBtn" 
+            type="submit" 
+            asp-page-handler="Mul"
+            method="POST">*</button>
+    <button name="divBtn" 
+            id="divBtn" 
+            type="submit" 
+            asp-page-handler="Div"
+            method="POST">/</button>
 </form>
 
 

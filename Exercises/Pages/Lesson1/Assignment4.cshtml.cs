@@ -6,12 +6,15 @@ namespace Exercises.Pages.Lesson1
 {
     public class Assignment4 : PageModel
     {
-        [BindProperty] private int CategoryHeading { get; set; }
-        [BindProperty] int SubCategoryHeading { get; set; }
-        [BindProperty] int ProductIdHeading { get; set; }
+        [BindProperty (SupportsGet = true)] private int CategoryHeading { get; set; }
+        [BindProperty (SupportsGet = true)] int SubCategoryHeading { get; set; }
+        [BindProperty (SupportsGet = true)] int ProductIdHeading { get; set; }
+        
         public void OnGet()
         {
             
         }
     }
+    
+    
 }

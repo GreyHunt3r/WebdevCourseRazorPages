@@ -6,21 +6,21 @@
 }
 
 <div>
-    <form method="post">
-        <h1>Happy: <span id="happyCount">###</span>
-            <button id="btnHappy" type="submit" ###>Happy++</button>
+    <form method="POST">
+        <h1>Happy: <span id="happyCount">@Model.M.Happy</span>
+            <button id="btnHappy" type="submit" name="mood" value="happy">Happy++</button>
         </h1>
 
-        <h1>Disappointed: <span id="disappointedCount">###</span>
-            <button id="btnDisappointed" type="submit" ###>Disappointed++</button>
+        <h1>Disappointed: <span id="disappointedCount">@Model.M.Disappointed</span>
+            <button id="btnDisappointed" type="submit" name="mood" value="disappointed">Disappointed++</button>
         </h1>
 
-        <h1>Angry: <span id="angryCount">###</span>
-            <button id="btnAngry" type="submit" ###>Angry++</button>
+        <h1>Angry: <span id="angryCount">@Model.M.Angry</span>
+            <button id="btnAngry" type="submit" name="mood" value="angry">Angry++</button>
         </h1>
 
         <hr>
 
-        <button id="btnDeleteCookie" type="submit" ###>Delete Cookie</button>
+        <button id="btnResetCookie" type="submit" name="mood" value="reset">Reset Cookie</button>
     </form>
 </div>

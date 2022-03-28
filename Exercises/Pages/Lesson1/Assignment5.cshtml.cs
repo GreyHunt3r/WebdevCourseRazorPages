@@ -24,6 +24,11 @@ namespace Exercises.Pages.Lesson1
         
         public void OnGet()
         {
+            if (HttpContext.Request.Cookies.ContainsKey("myCookie"))
+            {
+                string value = HttpContext.Request.Cookies["myCookie"];
+                M = JsonConvert.DeserializeObject<MoodCounter>(value);
+            }
         }
 
         public void OnPost(string mood = "")
@@ -54,7 +59,7 @@ namespace Exercises.Pages.Lesson1
 
             }
 
-            string mString= JsonConvert.SerializeObject(M);
+            string mString = JsonConvert.SerializeObject(M);
             Response.Cookies.Append("myCookie", mString);
 
         }
